@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" onkeypress="validarNome()" required>
+        <div id="nomevalidado"></div>
+    
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" onkeypress="validarEmail()" required>
+        <div id="emailvalidado"></div>
+    
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" onkeypress="validarMensagem()" required></textarea>
+        <div id="mensagemvalidada"></div>
+    
+        <button type="submit" onclick="enviarForm()">Enviar</button>
+    </form>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
